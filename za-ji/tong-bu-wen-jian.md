@@ -22,7 +22,26 @@
 
 #### 修改远程主机登录信息
 
-![](/assets/impordsrghtt.png)
+```
+{
+    "protocol": "sftp",
+    "host": "192.168.1.110",
+    "port": 22,
+    "user": "vagrant",
+    "pass": "vagrant",
+    "promptForPass": false,
+    "remote": "/etc/nginx",
+    "agent": "",
+    "privatekey": "",
+    "passphrase": "",
+    "hosthash": "",
+    "ignorehost": true,
+    "connTimeout": 10000,
+    "keepalive": 10000,
+    "keyboardInteractive": false,
+    "watch": []
+}
+```
 
 #### 挂载远程目录
 
