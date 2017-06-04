@@ -45,8 +45,39 @@ http {
     #导入service服务配置
     include /etc/nginx/conf.d/*.conf;
 }
-
 ```
+
+### .conf文件中server结构
+
+```ruby
+server {
+    #监听的端口和ip地址
+    listen       80;
+    server_name  localhost;
+
+    #定义匹配模式
+    location / {
+        #资源目录
+        root   /usr/share/nginx/html;
+        #默认依次打开的页面
+        index  index.html index.htm;
+    }
+
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+```
+
+
+
+
+
+
+
+
 
 
 
