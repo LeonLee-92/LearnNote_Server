@@ -81,6 +81,46 @@ server {
 > mkdir -p /mnt/app/hello
 > touch /mnt/app/hello/index.html
 > ```
+>
+> #### Tip:出现403错误解决\(SELinux开启导致\)
+>
+> > ##### 检查SELinux是否开启
+> >
+> > ```
+> > getenforce
+> >
+> > --> 如果是Enforcing表示开启，需要修改目录的安全上下文
+> > --> 如果是disable表示关闭，说明是其他问题导致
+> > ```
+> >
+> > ##### 修改安全上下文
+> >
+> > ```
+> > sudo chcon -Rt httpd_sys_content_t /mnt/app
+> > ```
+
+### 自定义默认server
+
+> ##### 创建自定义配置文件
+>
+> ```
+> sudo touch /etc/nginx/custom_default.conf
+> ```
+>
+> ##### 编辑配置文件
+>
+> ```
+> sudo vi /etc/nginx/custom_default.conf
+>
+> /**
+> server {
+> 	listen 		80 default_server;
+> 	root		/mnt/app/hello;
+> }      
+> */
+> ```
+>
+> ##### 重启nginx
 
 
 
