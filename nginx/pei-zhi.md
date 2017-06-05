@@ -73,7 +73,14 @@ server {
 
 ### 添加server
 
-
+> ![](/assets/dlfkjglimport.png)
+>
+> ##### 在远程添加对应的文件夹和页面
+>
+> ```
+> mkdir -p /mnt/app/hello
+> touch /mnt/app/hello/index.html
+> ```
 
 
 

@@ -14,7 +14,7 @@ enabled=1
 安装
 
 ```
-yum install nginx -y
+sudo yum install nginx -y
 ```
 
 启动并开机自启动
