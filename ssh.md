@@ -49,7 +49,7 @@
 > # 例如使用者的 ~.ssh/ 权限设错时，某些特殊情况下会不许用户登入
 > StrictModes no
 > ```
-
+>
 > ```
 > # 是否允许用户自行使用成对的密钥系统进行登入行为，仅针对 version 2。
 > # 至于自制的公钥数据就放置于用户家目录下的 .ssh/authorized_keys 内
@@ -57,7 +57,7 @@
 > PubkeyAuthentication yes
 > AuthorizedKeysFile  .ssh/authorized_keys
 > ```
-
+>
 > ```
 > # 有了证书登录了，就禁用密码登录吧，安全要紧
 > PasswordAuthentication no
