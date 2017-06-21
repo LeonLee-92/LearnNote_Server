@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [SSH](ssh.md)
 * [Nginx](nginx.md)
   * [安装](nginx/an-zhuang.md)
   * [配置](nginx/pei-zhi.md)
